@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DÖVİZ KURU UYGULAMASI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container"> <!--bütün ekranın geneli-->
+        <div id="main">
+            <div class="header-wrapper"> <!-- döviz kuru yazan yeri tutar -->
+                <h3>DÖVİZ KURU HESAPLAMA</h3>
+            </div>
+        <div class="content-wrapper">  <!--dönüşümleri yapacak alanı tutar-->
+                <input id="amount" type="number" placeholder="miktar giriniz.."> 
+                <select id="firstCurrencyOption">
+                    <option selected>USD</option> <!--seçenekte usd yi seçili tutar-->
+                    <option>EUR</option>
+                    <option>JPY</option>
+                    <option>BGN</option>
+                    <option>CZK</option>
+                    <option>DKK</option>
+                    <option>GBP</option>
+                    <option>HUF</option>
+                    <option>PLN</option>
+                    <option>RON</option>
+                    <option>SEK</option>
+                    <option>CHF</option>
+                    <option>ISK</option>
+                    <option>NOK</option>
+                    <option>HRK</option>
+                    <option>RUB</option>
+                    <option>TRY</option>
+                    <option>AUD</option>
+                    <option>BRL</option>
+                    <option>CAD</option>
+                    <option>CNY</option>
+                    <option>HKD</option>
+                    <option>IDR</option>
+                    <option>ILS</option>
+                    <option>INR</option>
+                    <option>KRW</option>
+                    <option>MXN</option>
+                    <option>MYR</option>
+                    <option>NZD</option>
+                    <option>PHP</option>
+                    <option>SGD</option>
+                    <option>THB</option>
+                    <option>ZAR</option>
+                </select>
+                <i class="fa-solid fa-arrow-right"></i>
+                <select id="secondCurrencyOption">
+                    <option selected>TRY</option> <!--seçenekte usd yi seçili tutar-->
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>BGN</option>
+                    <option>CZK</option>
+                    <option>DKK</option>
+                    <option>GBP</option>
+                    <option>HUF</option>
+                    <option>PLN</option>
+                    <option>RON</option>
+                    <option>SEK</option>
+                    <option>CHF</option>
+                    <option>ISK</option>
+                    <option>NOK</option>
+                    <option>HRK</option>
+                    <option>RUB</option>
+                    <option>JPY</option>
+                    <option>AUD</option>
+                    <option>BRL</option>
+                    <option>CAD</option>
+                    <option>CNY</option>
+                    <option>HKD</option>
+                    <option>IDR</option>
+                    <option>ILS</option>
+                    <option>INR</option>
+                    <option>KRW</option>
+                    <option>MXN</option>
+                    <option>MYR</option>
+                    <option>NZD</option>
+                    <option>PHP</option>
+                    <option>SGD</option>
+                    <option>THB</option>
+                    <option>ZAR</option>
+                </select>
+                <button type="button" class="operator">=</button>
+                <input type="number" id="result" readonly placeholder="Sonuç">
+        </div>
+        </div>
+      
+    </div>
+    <div id="loanshark-screen">
+        <div class="name" >
+            <h3>FAİZ HESAPLAMA SİSTEMİ</h3>
+        </div>
+        <div class="screen-see">
+        <input id="debt" type="number" placeholder="alınan borç"> 
+        
+        <select id="monthOption">
+            <option selected>1 ay</option>
+            <option>2 ay</option>
+            <option>3 ay</option>
+            <option>4 ay</option>
+            <option>5 ay</option>
+            <option>6 ay</option>
+            <option>7 ay</option>
+            <option>8 ay</option>
+            <option>9 ay</option>
+            <option>10 ay</option>
+            <option>11 ay</option>
+            <option>12 ay</option>
+        </select>
+        <i class="fa-solid fa-arrow-right"></i>
+
+        <input id="robbery" type="number" placeholder="ödenecek borç">  <!--faizli tutar-->
+    </div>
+    </div>
+ 
+    <script src="currency.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+

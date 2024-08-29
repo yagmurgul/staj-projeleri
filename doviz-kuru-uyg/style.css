@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+#container {
+    width: 100%;
+}
+
+#main {
+    background-color: rgb(160, 145, 145);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 40px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+.header-wrapper h3 {
+    margin: 0;
+}
+
+.name h3{
+    margin: 1;
+    text-align: center;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.content-wrapper input,
+.content-wrapper select,
+.content-wrapper button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.content-wrapper input:focus,
+.content-wrapper select:focus,
+.content-wrapper button:focus {
+    border-color: #1c1d1f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(40, 41, 43, 0.5);
+}
+
+.content-wrapper button {
+    background-color: #4e555c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.content-wrapper button:hover {
+    background-color: #293038;
+}
+
+#loanshark-screen {
+    background-color: rgb(160, 145, 145);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-right: 125px;
+}
+
+.screen-see {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.screen-see input,
+.screen-see select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.screen-see input:focus,
+.screen-see select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.screen-see select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA3YmZmIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNnB4IiBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTIgNmgxMmwtNiA2eiIvPjwvc3ZnPg==') no-repeat right 10px center;
+    background-size: 10px 10px;
+}
+
+.screen-see select option {
+    padding: 10px;
+}
